@@ -1,0 +1,20 @@
+.search-div {
+  margin: 15px 0;
+}
+
+.search-input-field {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+  border-style: outset;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 0;
+  outline: none;
+}
+
+.search-input-field:focus {
+  border: 0;
+  outline: none;
+  box-shadow: 0 0 8px 4px rgba(59, 204, 230, 0.6);
+}

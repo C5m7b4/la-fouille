@@ -1,3 +1,4 @@
+import { IFilterProperty } from './IFilterProperty';
 import { ISorterProperty } from './ISorterProperty';
 
 export interface SearchProps<T> {
@@ -52,7 +53,7 @@ export interface SearchProps<T> {
   /**
    * The initial properties to filter on
    */
-  //initialFilterProperties: Array<IFilterProperty<T>>;
+  initialFilterProperties: Array<IFilterProperty<T>>;
   /**
    * optional: The main css style for the SearchInput component
    */

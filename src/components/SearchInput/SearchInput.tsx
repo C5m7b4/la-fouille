@@ -2,17 +2,19 @@ import React, { FC, useState, useEffect } from 'react';
 import { useDebounce } from '../../hooks/useDebounce';
 import { SearchInputProps } from '../../interfaces/SearchInputProps';
 
+import './SearchInput.css';
+
 function SearchInput(props: SearchInputProps) {
   const {
     searchQuery,
     setSearchQuery,
     mainDivStyle,
-    mainDivClassName,
+    mainDivClassName = 'search-div',
     labelStyle,
     labelClassName,
     labelText = 'Search',
     inputStyle,
-    inputClassName,
+    inputClassName = 'search-input-field',
     inputPlaceholder = 'Search...',
   } = props;
   const [query, setQuery] = useState<string>('');
